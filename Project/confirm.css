@@ -1,0 +1,24 @@
+*{
+    font-family: "Copperplate Gothic Light";
+}
+h1{
+    text-align: center;
+    font-size: 36px;
+    color: #f0ad4e;
+    font-weight: 590;
+}
+#main{
+    padding: 30px;
+}
+#confirm-image img{
+    height: 500px;
+    max-width: auto;
+}
+#confirm-product-details{
+    margin: 20px auto;
+}
+#returnhome{
+    background-color: #f0ad4e;
+    color: white;
+    font-weight: 550;
+}

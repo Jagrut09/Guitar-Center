@@ -1,0 +1,56 @@
+*{
+    font-family: "Copperplate Gothic Light";
+}
+.header{
+    background-color: rgb(243, 178, 57);
+    margin-top: 15px;
+    padding: 5px;
+    font-weight: 540;
+    color: aliceblue;
+    font-size: 36px;
+    text-align: center;
+}
+h3{
+    text-align: center;
+    font-size: 23px;
+}
+#pimage img{
+    height: 500px;
+    max-width: auto;
+}
+form{
+    display: block;
+}
+input[type="text"]{
+    border-radius: 5px;
+    width: 40%;
+    height: 20px;
+    padding: 15px;
+    margin-left: 10px;
+}
+#customer-form{
+    width: 70%;
+    margin-left: 20%;
+    position: relative;
+}
+select{
+    padding: 8px;
+}
+#cvv{
+    width: 72px;
+}
+#review{
+    background-color: #f0ad4e;
+    color: white;
+    font-weight: 630;
+}
+#edit{
+    background-color: #f0ad4e;
+    color: white;
+    font-weight: 550;
+}
+#buy{
+    background-color: #f0ad4e;
+    color: white;
+    font-weight: 630;
+}

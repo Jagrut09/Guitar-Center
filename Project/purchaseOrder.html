@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Purchase Order</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="purchaseOrder.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="container-fluid">
+        <div class="header">
+            <header>PURCHASE ORDER DETAIL</header>
+        </div>
+        <div id="pimage">
+            <center><img id="productimage" alt="Product Image"></center>
+        </div><br><br>
+        <div class="purchase-product-details">
+            <div>
+                <span><strong>PRODUCT INFO:</strong></span>
+                <span id="purchase-product-info"></span>
+            </div><br><br>
+            <div>
+                <span><strong>TOTAL PRICE: </strong></span>
+                <span id="purchase-price"></span>
+            </div><br><br>
+            <div>
+                <span><strong>SHIPPING INFO: </strong></span>
+                <span id="purchase-shipping-info"></span>
+            </div><br><br>
+            <div>
+                <span><strong>AVAILABILITY:</strong></span>
+                <span id="purchase-availability"></span>
+            </div><br><br>
+            <div>
+                <span><strong>CUSTOMER REVIEW:</strong></span>
+                <span id="purchae-customer-review"></span>
+            </div>
+        </div><br><br>
+
+        <div id="form">
+            <header><h3>PURCHASE DETAILS</h3></header>
+            <form name="customer-form" onsubmit="validateForm()" action="/purchaseOrder.html" method="get">
+                <input type="text" name="fn" id="fname" placeholder="FIRST NAME">
+                <input type="text" name="ln" id="lname" placeholder="LAST NAME"><br><br>
+                <input type="text" name="pn" id="pnumber" placeholder="PHONE NUMBER">
+                <input type="text" name="email" id="email" placeholder="E-MAIL"><br><br>
+                <input type="text" name="add1" id="add1" placeholder="ADDRESS LINE 1">
+                <input type="text" name="add2" id="add2" placeholder="ADDRESS LINE 2"><br><br>
+                <input type="text" name="city" id="city" placeholder="CITY">
+                <input type="text" name="pc" id="pcode" placeholder="PIN CODE"><br><br>
+                <label for="state" style="text-align:left;">STATE: </label>
+                <select id="state">
+                    <option>NJ</option>
+                    <option>NY</option>
+                    <option>CA</option>
+                    <option>PA</option>
+                </select><br><br>
+                <input type="text" name="cn" id="cnumber" placeholder="CARD NUMBER"><br><br>
+                <label for="expiry">EXPIRY</label>
+                <select id="month">
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                </select>
+                <select id="year">
+                    <option>2018</option>
+                    <option>2019</option>
+                    <option>2020</option>
+                    <option>2021</option>
+                    <option>2022</option>
+                </select>
+                <input type="text" name="cvv" id="cvv" placeholder="CVV"><br>
+                <input type="submit" id="review" class="btn btn-warning btn-block" value="REVIEW ORDER SUMMARY">
+            </form>
+        </div><br><br>
+
+        <div id="display-purchase-details">
+            <span><strong>Full Name: </strong></span>
+            <span id="dfn"></span>
+            <span id="dln"></span><br><br>
+            <span><strong>Phone Number: </strong></span>
+            <span id="dphone-no"></span><br><br>
+            <span><strong>E-mail: </strong></span>
+            <span id="demail"></span><br><br>
+            <span><strong>Address: </strong></span>
+            <span id="dadd1"></span>
+            <span id="dadd2"></span><br>
+            <span id="dcity"></span>
+            <span id="dstate"></span>
+            <span id="dpin"></span>
+        </div><br><br>
+        <button id="edit" class="btn btn-warning" onclick="editdetails()">EDIT</button><br><br>
+        <button id="btnbuy" class="btn btn-warning btn-block">BUY</button>
+    </div>
+</div>
+<script src="purchaseOrder.js "></script>
+</body>
+</html>
